@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav | Royal Indian Catering</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="brand-utsav">Utsav</span>
+            <span class="brand-sub">Royal Catering</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#estimator">Cost Estimator</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#estimator" class="nav-cta-btn">Calculate Cost</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Crafting Culinary Masterpieces</span>
+            <h1>A Symphony of Royal Indian Flavors</h1>
+            <p>From grand heritage weddings to elegant corporate galas, we bring the authentic taste of Indian royalty
+                to your celebrations.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Book Your Feast</a>
+                <a href="#menu" class="btn btn-secondary">Explore Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <span class="section-tag">What We Do</span>
+        <h2>Exquisite Catering Services</h2>
+        <div class="services-grid">
+            <div class="service-card wedding">
+                <div class="card-icon">
+                    <i class="fa-solid fa-ring"></i>
+                </div>
+                <h3>Shaadi & Sangeet</h3>
+                <p>Elaborate multi-course royal buffets, spectacular decor matching the theme, and traditional live
+                    kitchens for your dream wedding.</p>
+            </div>
+            <div class="service-card corporate">
+                <div class="card-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3>Corporate Galas</h3>
+                <p>Sophisticated networking lunches, custom bento boxes, and high-tea spreads featuring modern fusion
+                    twists on classic Indian delicacies.</p>
+            </div>
+            <div class="service-card festive">
+                <div class="card-icon">
+                    <i class="fa-solid fa-dharmachakra"></i>
+                </div>
+                <h3>Festive & Puja Feasts</h3>
+                <p>Pure vegetarian (Satvik options available) traditional spreads served with absolute purity and
+                    reverence for family celebrations.</p>
+            </div>
+            <div class="service-card live">
+                <div class="card-icon">
+                    <i class="fa-solid fa-fire-burner"></i>
+                </div>
+                <h3>Live Chaat & Tandoor</h3>
+                <p>Interactive, high-energy live counters with street-style Golgappa, sizzling tandoori starters, and
+                    butter-dripping fresh naans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section (with JS filter) -->
+    <section id="menu" class="menu-section">
+        <span class="section-tag">Our Culinary Art</span>
+        <h2>Explore Our Royal Menu</h2>
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-target="appetizers">Shuruwat <span
+                    class="sub-tab">Appetizers</span></button>
+            <button class="tab-btn" data-target="mains">Mukhya Bhojan <span class="sub-tab">Main Courses</span></button>
+            <button class="tab-btn" data-target="desserts">Meetha <span class="sub-tab">Desserts</span></button>
+        </div>
+
+        <div class="menu-container">
+            <!-- Appetizers -->
+            <div id="appetizers" class="menu-category active">
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Paneer Tikka Angare <span class="badge veg"><i
+                                    class="fa-solid fa-circle"></i></span></span>
+                        <span class="menu-item-price">₹450</span>
+                    </div>
+                    <p class="menu-item-desc">Spicy cottage cheese cubes marinated in yogurt and red chillies,
+                        chargrilled in clay oven.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Hara Bhara Kabab <span class="badge veg"><i
+                                    class="fa-solid fa-circle"></i></span></span>
+                        <span class="menu-item-price">₹380</span>
+                    </div>
+                    <p class="menu-item-desc">Crispy pan-fried patties made of spiced spinach, green peas, mashed
+                        potatoes, and roasted nuts.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Amritsari Fish Fry <span class="badge non-veg"><i
+                                    class="fa-solid fa-caret-up"></i></span></span>
+                        <span class="menu-item-price">₹550</span>
+                    </div>
+                    <p class="menu-item-desc">Crispy batter-fried river fish infused with carom seeds (ajwain), ginger,
+                        and fresh lemon.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Galouti Kabab <span class="badge non-veg"><i
+                                    class="fa-solid fa-caret-up"></i></span></span>
+                        <span class="menu-item-price">₹600</span>
+                    </div>
+                    <p class="menu-item-desc">Melt-in-your-mouth minced lamb patties slow-cooked on flat skillet with
+                        secret Awadhi spices.</p>
+                </div>
+            </div>
+            <!-- Mains -->
+            <div id="mains" class="menu-category">
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Shahi Paneer <span class="badge veg"><i
+                                    class="fa-solid fa-circle"></i></span></span>
+                        <span class="menu-item-price">₹480</span>
+                    </div>
+                    <p class="menu-item-desc">Cottage cheese triangles cooked in a rich, velvety cashew, tomato, and
+                        fresh cream gravy.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Dal Makhani Bukhara <span class="badge veg"><i
+                                    class="fa-solid fa-circle"></i></span></span>
+                        <span class="menu-item-price">₹400</span>
+                    </div>
+                    <p class="menu-item-desc">Whole black lentils simmered overnight over slow charcoal fire, finished
+                        with white butter and cream.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Awadhi Murgh Biryani <span class="badge non-veg"><i
+                                    class="fa-solid fa-caret-up"></i></span></span>
+                        <span class="menu-item-price">₹650</span>
+                    </div>
+                    <p class="menu-item-desc">Long-grain Basmati rice dum-cooked with tender saffron-infused chicken and
+                        rose water.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Nalli Nihari <span class="badge non-veg"><i
+                                    class="fa-solid fa-caret-up"></i></span></span>
+                        <span class="menu-item-price">₹750</span>
+                    </div>
+                    <p class="menu-item-desc">Slow-cooked tender lamb shanks in a deeply aromatic, flour-thickened
+                        traditional spiced gravy.</p>
+                </div>
+            </div>
+            <!-- Desserts -->
+            <div id="desserts" class="menu-category">
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Shahi Tukda <span class="badge veg"><i
+                                    class="fa-solid fa-circle"></i></span></span>
+                        <span class="menu-item-price">₹250</span>
+                    </div>
+                    <p class="menu-item-desc">Golden-fried bread slices soaked in cardamom sugar syrup, topped with
+                        saffron rabri and silver leaf.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Elaneer Payasam <span class="badge veg"><i
+                                    class="fa-solid fa-circle"></i></span></span>
+                        <span class="menu-item-price">₹200</span>
+                    </div>
+                    <p class="menu-item-desc">A refreshing chilled southern delicacy made with fresh tender coconut
+                        pulp, coconut milk, and jaggery.</p>
+                </div>
+                <div class="menu-item-card">
+                    <div class="menu-item-header">
+                        <span class="menu-item-name">Kesari Rasmalai <span class="badge veg"><i
+                                    class="fa-solid fa-circle"></i></span></span>
+                        <span class="menu-item-price">₹220</span>
+                    </div>
+                    <p class="menu-item-desc">Soft, flattened cottage cheese balls soaked in sweetened, thickened milk
+                        flavored with saffron and pistachios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Estimator Widget Section -->
+    <section id="estimator" class="estimator-section">
+        <div class="estimator-wrapper">
+            <span class="section-tag">Instant Quote</span>
+            <h2>Catering Cost Estimator</h2>
+            <p>Get an immediate estimation for your grand event based on your preferences.</p>
+
+            <div class="estimator-card">
+                <div class="estimator-inputs">
+                    <div class="input-block">
+                        <label for="menuType">Select Menu Preference</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="menuPref" value="veg" checked>
+                                <span class="custom-radio">Pure Veg (₹600/plate)</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="menuPref" value="mixed">
+                                <span class="custom-radio">Veg & Non-Veg (₹800/plate)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="guestSlider">Number of Guests: <span id="guestCountDisplay">150</span></label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="guestSlider" min="20" max="1000" step="10" value="150"
+                                class="custom-slider">
+                            <div class="slider-labels">
+                                <span>20</span>
+                                <span>500</span>
+                                <span>1000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-block">
+                        <label>Optional Add-ons</label>
+                        <div class="checkbox-grid">
+                            <label class="check-label">
+                                <input type="checkbox" id="addLiveCounter" value="150">
+                                <span class="custom-checkbox"></span> Live Street Food & Chaat Counters (+₹150/plate)
+                            </label>
+                            <label class="check-label">
+                                <input type="checkbox" id="addMocktailBar" value="100">
+                                <span class="custom-checkbox"></span> Royal Mocktail Bar (+₹100/plate)
+                            </label>
+                            <label class="check-label">
+                                <input type="checkbox" id="addPremiumDecor" value="50000">
+                                <span class="custom-checkbox"></span> Premium Buffet Setup & Decor (+₹50,000 flat)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="estimator-result">
+                    <div class="result-box">
+                        <span class="result-title">Estimated Investment</span>
+                        <div class="price-display">
+                            <span class="currency">₹</span><span id="estimatedTotal">112,500</span>
+                        </div>
+                        <p class="price-breakdown">Rate per plate: ₹<span id="ratePerPlate">750</span></p>
+                        <p class="estimator-note">*Excludes taxes. Final pricing subject to consultation.</p>
+                        <a href="#contact" class="btn btn-primary btn-block">Lock This Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <span class="section-tag">Let's Connect</span>
+        <h2>Inquire About Your Event</h2>
+        <p class="contact-sub">Share details of your celebration, and our culinary planners will curate a tailored
+            proposal.</p>
+
+        <form id="cateringForm" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <select id="eventType" required>
+                        <option value="" disabled selected>Select Event Type</option>
+                        <option value="wedding">Wedding & Sangeet</option>
+                        <option value="corporate">Corporate Gala/Luncheon</option>
+                        <option value="festive">Festive / Family Function</option>
+                        <option value="private">Private Dinner / Birthday</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <select id="formMenuPref" required>
+                        <option value="" disabled selected>Menu Preference</option>
+                        <option value="veg">Pure Vegetarian</option>
+                        <option value="mixed">Veg & Non-Vegetarian</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="guests" min="20" placeholder="Estimated Guests" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <textarea id="message" rows="4"
+                    placeholder="Tell us about your event (Theme, specific dishes, dietary requests...)"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">Send Royal Inquiry</button>
+            <p id="formFeedback" class="feedback-msg"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-utsav">Utsav</span>
+                <p>Bringing authentic Indian royalty and culinary excellence to your special moments.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#estimator">Cost Estimator</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> JM Road, Pune, Maharashtra</p>
+                <p><i class="fa-solid fa-phone"></i> +91 999999999</p>
+                <p><i class="fa-solid fa-envelope"></i> royal@utsavcatering.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Utsav Royal Indian Catering. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -101,4 +101,7 @@ Some features that can be added in the future include:
 
 ---
 
+[Visit Website](https://food-catering-service.vercel.app/)
+
+---
 If you like this project, consider giving it a ⭐ on GitHub.
